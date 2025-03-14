@@ -1,0 +1,182 @@
+     /* Общие стили */
+ body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117; /* Тёмный фон */
+    color: #c9d1d9; /* Светлый текст */
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Шапка (Header) */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #161b22;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f97316; /* Ярко-оранжевый акцент */
+  }
+  header nav a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #c9d1d9;
+    transition: color 0.3s ease;
+  }
+  header nav a:hover {
+    color: #f97316;
+  }
+  header .btn {
+    background: #f97316;
+    color: #0d1117;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  header .btn:hover {
+    background: #fb923c;
+  }
+
+  /* Герой-секция (Hero Section) */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(145deg, #161b22, #0d1117);
+    color: #c9d1d9;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  .hero .btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    background: #f97316;
+    color: #0d1117;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .hero .btn:hover {
+    background: #fb923c;
+  }
+
+  /* Секция "Популярные идеи" */
+  .ideas {
+    padding: 3rem 2rem;
+    background: #0d1117;
+  }
+  .ideas h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f97316;
+  }
+  .ideas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .idea-card {
+    background: #161b22;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .idea-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  }
+  .idea-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .idea-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #f97316;
+  }
+  .idea-card p {
+    font-size: 1rem;
+    color: #c9d1d9;
+  }
+
+  /* Секция "Как это работает" */
+  .how-it-works {
+    padding: 3rem 2rem;
+    background: #161b22;
+    color: #c9d1d9;
+    text-align: center;
+  }
+  .how-it-works h2 {
+    font-size: 2rem;
+    color: #f97316;
+    margin-bottom: 2rem;
+  }
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .step {
+    background: #0d1117;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  .step:hover {
+    transform: translateY(-10px);
+  }
+  .step h3 {
+    font-size: 1.4rem;
+    color: #f97316;
+    margin-bottom: 1rem;
+  }
+  .step p {
+    font-size: 1rem;
+  }
+
+  /* Подвал (Footer) */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #0d1117;
+    color: #c9d1d9;
+    margin-top: 2rem;
+  }
+  footer a {
+    color: #f97316;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #fb923c;
+  }
