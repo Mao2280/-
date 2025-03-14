@@ -16,9 +16,16 @@
               <a href="#">Идеи</a>
               <a href="{{url_for('about')}}">О нас</a>
             </nav>
-            <a href="{{ url_for('register') }}"><button class="btn">Зарегистрироваться</button></a>
-
+            <div class="btn-container">
+                <button class="btn">Создать пост</button>
+                <div class="icon-container">
+                  <!-- Иконки профиля и настроек рядом с кнопкой -->
+                  <a href="{{url_for('profile')}}"> <i class="fas fa-user-circle" title="Профиль"></i></a>
+                  <i class="fas fa-cogs" title="Настройки"></i>
+                </div>
+              </div>
         </header>
+        
         {%block body%}{%endblock%}
     </div>
 

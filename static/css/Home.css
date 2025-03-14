@@ -42,23 +42,6 @@ img {
   color: #f97316;
 }
 
-/* Прокрутка */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #161b22;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #f97316;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #fb923c;
-}
 
 /* Шапка (Header) */
 header {
