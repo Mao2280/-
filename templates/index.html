@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mao</title>
-  <link rel="stylesheet" href="/style/index.css">
-</head>
-<body>
-  <header>
-    <div class="logo">CreativeSpace</div>
-    <nav>
-      <a href="/index.html">Главная</a>
-      <a href="/Home.html">Идеи</a>
-      <a href="#">О нас</a>
-    </nav>
-    <button class="btn" onclick="window.location.href='/reg.html'">Зарегистрироваться</button>
-  </header>
+{% extends 'base.html' %}
 
-  <section class="hero">
+{%block title%}
+Mao
+{%endblock%}
+{% block styles %}<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">{% endblock %}
+
+{%block body%}
+<section class="hero">
     <h1>Воплощайте свои идеи в жизнь</h1>
     <p>Платформа для публикации креативных идей и поиска единомышленников.</p>
-    <button class="btn">Начать</button>
-  </section>
+    <a href="{{ url_for('login') }}">
+      <button class="btn">Начать</button>
+  </a>
+    </section>
 
   <section class="ideas">
     <h2>Популярные идеи</h2>
@@ -61,9 +52,4 @@
       </div>
     </div>
   </section>
-
-  <footer>
-    CreativeSpace © 2025. Все права защищены. <a href="#">Политика конфиденциальности</a>.
-  </footer>
-</body>
-</html>
+{%endblock%}

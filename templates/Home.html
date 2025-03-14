@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная - Платформа для творческих идей</title>
-  <!-- Добавляем Font Awesome для иконок -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="/style/Home.css">
-</head>
-<body>
-  <header>
-    <div class="logo">CreativeSpace</div>
-    <nav>
-      <a href="/index.html">Главная</a>
-      <a href="/Home.html">Идеи</a>
-      <a href="#">О нас</a>
-    </nav>
-    <div class="btn-container">
-      <button class="btn">Создать пост</button>
-      <div class="icon-container">
-        <!-- Иконки профиля и настроек рядом с кнопкой -->
-        <a href="/profile.html"> <i class="fas fa-user-circle" title="Профиль"></i></a>
-        <i class="fas fa-cogs" title="Настройки"></i>
-      </div>
-    </div>
-  </header>
-  
+{% extends 'base_auto.html' %}
 
+{%block title%}
+Mao
+{%endblock%}
+{% block styles %}<link rel="stylesheet" href="{{ url_for('static', filename='css/Home.css') }}">{% endblock %}
+
+{%block body%}
   <div class="container">
     <section class="best-posts">
       <h2>Лучшие посты</h2>
@@ -60,9 +39,4 @@
       </div>
     </section>
   </div>
-
-  <footer>
-    <p>&copy; 2025 CreativeSpace. Все права защищены.</p>
-  </footer>
-</body>
-</html>
+  {%endblock%}

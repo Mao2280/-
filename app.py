@@ -2,9 +2,13 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/index2')
-def index2():
-    return render_template('index2.html')
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+@app.route('/Home')
+def Home():
+    return render_template('Home.html')
 
 @app.route('/about')
 def about():
@@ -17,6 +21,10 @@ def profile():
 @app.route('/register')
 def register():
     return render_template('reg.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

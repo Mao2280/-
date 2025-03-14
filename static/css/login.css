@@ -72,11 +72,3 @@ body {
 .login-container .signup-link a:hover {
   text-decoration: underline;
 }
-
-footer {
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
-  color: #c9d1d9;
-  font-size: 0.9rem;
-}

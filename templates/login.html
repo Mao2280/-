@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Авторизация</title>
-  <link rel="stylesheet" href="/style/login.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
 
@@ -16,13 +16,9 @@
       <button type="submit">Войти</button>
     </form>
     <div class="signup-link">
-      <p>Нет аккаунта? <a href="/reg.html">Зарегистрироваться</a></p>
+      <p>Нет аккаунта? <a href="{{ url_for('register') }}">Зарегистрироваться</a></p>
     </div>
   </div>
-
-  <footer>
-    <p>&copy; 2025 CreativeSpace. Все права защищены.</p>
-  </footer>
 
 </body>
 </html>

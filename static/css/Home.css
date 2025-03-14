@@ -1,86 +1,6 @@
-     /* Общие стили */
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #0d1117;
-  color: #c9d1d9;
   text-align: center;
   overflow-x: hidden;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-img {
-  max-width: 100%;
-  border-radius: 10px;
-  height: auto;
-}
-
-/* Контейнер для кнопки и иконок */
-.btn-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Контейнер для иконок с отступом между иконками */
-.icon-container {
-  display: flex;
-  gap: 10px;  /* Отступ между иконками */
-}
-
-/* Стили для иконок рядом с кнопкой */
-.icon-container i {
-  font-size: 1.5rem;
-  color: #c9d1d9;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.icon-container i:hover {
-  color: #f97316;
-}
-
-
-/* Шапка (Header) */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #161b22;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-header .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #f97316;
-}
-header nav a {
-  margin: 0 1rem;
-  font-size: 1rem;
-  color: #c9d1d9;
-  transition: color 0.3s;
-}
-header nav a:hover {
-  color: #f97316;
-}
-header .btn {
-  background: #f97316;
-  color: #0d1117;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-header .btn:hover {
-  background: #fb923c;
 }
 
 /* Контейнер */
@@ -209,11 +129,4 @@ header .btn:hover {
 
 .comment-input button:hover {
   background: #fb923c;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #161b22;
-  margin-top: 2rem;
 }

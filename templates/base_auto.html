@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{%block title%}{%endblock%}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base_auto.css') }}">
     {% block styles %}{% endblock %}
 </head>
 <body>
-    <div class="container">
         <header>
             <div class="logo">CreativeSpace</div>
             <nav>
-              <a href="{{url_for('index2')}}">Главная</a>
-              <a href="#">Идеи</a>
+              <a href="{{url_for('index')}}">Главная</a>
+              <a href="{{url_for('Home')}}">Идеи</a>
               <a href="{{url_for('about')}}">О нас</a>
             </nav>
             <div class="btn-container">
                 <button class="btn">Создать пост</button>
                 <div class="icon-container">
                   <!-- Иконки профиля и настроек рядом с кнопкой -->
-                  <a href="{{url_for('profile')}}"> <i class="fas fa-user-circle" title="Профиль"></i></a>
-                  <i class="fas fa-cogs" title="Настройки"></i>
+                  <a href="{{ url_for('profile') }}">
+                    <img src="{{ url_for('static', filename='img/profile-icon.png') }}" alt="Профиль" title="Профиль" />
+                  </a>
+                  <a href="#">
+                    <img src="{{ url_for('static', filename='img/settings.png') }}" alt="Настройки" title="Настройки" />
+                  </a>                
                 </div>
               </div>
         </header>
         
         {%block body%}{%endblock%}
-    </div>
 
     <footer>
         CreativeSpace © 2025. Все права защищены. <a href="#">Политика конфиденциальности</a>.

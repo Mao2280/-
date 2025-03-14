@@ -15,6 +15,21 @@ body {
     height: auto;
   }
 
+  /* Контейнер для кнопки и иконок */
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Контейнер для иконок с отступом между иконками */
+.icon-container {
+  width: 40px; /* Задаем ширину иконки */
+  height: 40px;
+  display: flex;
+}
+
+
 /* Шапка (Header) */
  header {
     display: flex;
@@ -54,6 +69,7 @@ body {
   header .btn:hover {
     background: #fb923c;
   }
+ 
 
     /* Подвал (Footer) */
   footer {
